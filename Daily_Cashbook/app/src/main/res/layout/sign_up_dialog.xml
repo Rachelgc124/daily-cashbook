@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@color/bg_white">
+
+    <TextView
+        android:id="@+id/sign_up_diagPH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入满足以下条件的密码：
+        \n1. 至少六位数；
+        \n2. 至少包含一个字母
+        \n3. 至少包含一个数字"
+        android:textColor="@color/darkGreen"
+        android:textSize="18sp"
+        android:typeface="normal" />
+
+</RelativeLayout>

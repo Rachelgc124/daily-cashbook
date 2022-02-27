@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cash_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        >
+
+<!--        两个功能-->
+<!--        支出-->
+        <LinearLayout
+            android:id="@+id/cash_switch_ex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:background="@color/lightGreen"
+            android:saveEnabled="false">
+
+            <TextView
+                android:id="@+id/cash_switch_ex_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="支出"
+                android:textColor="@color/bg_white"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_white" />
+
+<!--        收入-->
+        <LinearLayout
+            android:id="@+id/cash_switch_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:background="@color/lightGreen"
+            android:saveEnabled="false" >
+
+            <TextView
+                android:id="@+id/cash_switch_in_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="收入"
+                android:textColor="@color/bg_white"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cash_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+
+</LinearLayout>

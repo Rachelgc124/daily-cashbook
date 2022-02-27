@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <!--    显示头像-->
+    <LinearLayout
+        android:id="@+id/mine_user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/lightGreen">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mine_default_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_profile"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_user_profile"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/bg_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mine_iun"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/username" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mine_iun"
+                android:text="用户名"
+                android:textColor="@color/brown"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mine_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mine_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mine_imail"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mine_imail"
+                android:text="邮箱"
+                android:textColor="@color/brown"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mine_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/mine_email_fwd"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mine_email_fwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/forword" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mine_line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mine_iphone"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mine_iphone"
+                android:text="手机号"
+                android:textColor="@color/brown"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mine_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/mine_tel_fwd"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mine_tel_fwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/forword" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mine_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mine_ipswd"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pswd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mine_ipswd"
+                android:text="修改密码"
+                android:textColor="@color/brown"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mine_pswd_fwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/forword" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mine_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/darkGreen"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

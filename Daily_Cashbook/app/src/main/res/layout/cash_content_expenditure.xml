@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGreen">
+
+<!--显示类别图标-->
+    <LinearLayout
+        android:id="@+id/cash_ex_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/lightGreen"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_eating"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_eating"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/eating"/>
+
+                <TextView
+                    android:id="@+id/cash_t_eating"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cash_ic_eating"
+                    android:gravity="center_horizontal"
+                    android:text="餐饮"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_shopping"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_shopping"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/shopping"/>
+
+                <TextView
+                    android:id="@+id/cash_t_shopping"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="购物"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_riyong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_riyong"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/riyong"/>
+
+                <TextView
+                    android:id="@+id/cash_t_riyong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="日用"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_jiaotong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_jiaotong"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/jiaotong"/>
+
+                <TextView
+                    android:id="@+id/cash_t_jiaotong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="交通"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_shucai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_shucai"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/shucai"/>
+
+                <TextView
+                    android:id="@+id/cash_t_shucai"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="蔬菜"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_shuiguo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_shuiguo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/shuiguo"/>
+
+                <TextView
+                    android:id="@+id/cash_t_shuiguo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="水果"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_lingshi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_lingshi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/lingshi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_lingshi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="零食"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_yundong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_yundong"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/yundong"/>
+
+                <TextView
+                    android:id="@+id/cash_t_yundong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="运动"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_yule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_yule"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/yule"/>
+
+                <TextView
+                    android:id="@+id/cash_t_yule"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="娱乐"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_tongxun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_tongxun"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/tongxun"/>
+
+                <TextView
+                    android:id="@+id/cash_t_tongxun"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="通讯"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_fushi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_fushi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/fushi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_fushi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="服饰"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_meirong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_meirong"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/meirong"/>
+
+                <TextView
+                    android:id="@+id/cash_t_meirong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="美容"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_zhufang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_zhufang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/zhufang"/>
+
+                <TextView
+                    android:id="@+id/cash_t_zhufang"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="住房"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_haizi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_haizi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/haizi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_haizi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="孩子"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_zhangbei"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_zhangbei"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/zhangbei"/>
+
+                <TextView
+                    android:id="@+id/cash_t_zhangebei"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="长辈"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_shejiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_shejiao"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/shejiao"/>
+
+                <TextView
+                    android:id="@+id/cash_t_shejiao"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="社交"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_lvxing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_lvxing"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/lvxing"/>
+
+                <TextView
+                    android:id="@+id/cash_t_lvxing"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="旅行"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cash_i_yiliao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_yiliao"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/yiliao"/>
+
+                <TextView
+                    android:id="@+id/cash_t_yiliao"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cash_ic_yiliao"
+                    android:gravity="center_horizontal"
+                    android:text="医疗"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_xuexi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_xuexi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/xuexi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_xuexi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="学习"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_liwu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_liwu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/liwu"/>
+
+                <TextView
+                    android:id="@+id/cash_t_liwu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="礼物"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_bangong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_bangong"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/bangong"/>
+
+                <TextView
+                    android:id="@+id/cash_t_bangong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="办公"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_juanzeng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_juanzeng"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/juanzeng"/>
+
+                <TextView
+                    android:id="@+id/cash_t_juanzeng"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="捐赠"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_kuaidi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_kuaidi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/kuaidi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_kuaidi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="快递"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_oothers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cash_ic_oothers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/others"/>
+
+                <TextView
+                    android:id="@+id/cash_t_oothers"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="其他"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

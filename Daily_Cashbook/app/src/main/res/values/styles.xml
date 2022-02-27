@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="login_edit_text" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/bg_white</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="dialog_edit_text" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/darkGreen</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_white"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/diag_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/lightGreen"/>
+
+        <EditText
+            android:id="@+id/diag_amount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diag_date"
+            android:layout_gravity="center"
+            android:hint="请输入金额"
+            android:maxLines="1"
+            android:theme="@style/dialog_edit_text" />
+
+        <EditText
+            android:id="@+id/diag_comment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diag_amount"
+            android:layout_gravity="center"
+            android:hint="备注"
+            android:maxLines="2"
+            android:theme="@style/dialog_edit_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/diag_photo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/diag_comment"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:src="@drawable/photo" />
+
+            <TextView
+                android:id="@+id/diag_album"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diag_amount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="从相册选择"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/bg_black"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGreen">
+
+    <!--显示类别图标-->
+    <LinearLayout
+        android:id="@+id/cash_in_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/lightGreen"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_gongzi"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_gongzi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/gongzi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_goingzi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="工资"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_jianzhi"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_jianzhi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/jianzhi"/>
+
+                <TextView
+                    android:id="@+id/cash_t_jianzhi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cash_ic_jianzhi"
+                    android:gravity="center_horizontal"
+                    android:text="兼职"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_licai"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_licai"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/licai"/>
+
+                <TextView
+                    android:id="@+id/cash_t_licai"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cash_ic_licai"
+                    android:gravity="center_horizontal"
+                    android:text="理财"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_lijin"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_lijin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/lijin"/>
+
+                <TextView
+                    android:id="@+id/cash_t_lijin"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="礼金"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cash_i_shenghuofei"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_shenghuofei"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/shenghuofei"/>
+
+                <TextView
+                    android:id="@+id/cash_t_shenghuofei"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="生活费"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/cash_i_iothers"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cash_ic_iothers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/lightGreen"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:src="@drawable/others"/>
+
+                <TextView
+                    android:id="@+id/cash_t_iothers"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="其他"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/bg_white">
+
+<!--    顶部导航栏-->
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/lightGreen">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Daily Cashbook"
+            android:textColor="@color/yellow"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+    </RelativeLayout>
+
+
+<!--    底下的栏目-->
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGreen"
+        android:orientation="horizontal">
+
+<!--        主页-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:text="@string/tab_menu_home" />
+
+<!--        报表-->
+        <RadioButton
+            android:id="@+id/rb_dash"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_dash"
+            android:text="@string/tab_menu_dashboard" />
+
+<!--        记账-->
+        <RadioButton
+            android:id="@+id/rb_cash"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_cash"
+            android:text="@string/tab_menu_cash" />
+
+<!--        我的-->
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_mine"
+            android:text="@string/tab_menu_mine" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/bg_white" />
+
+<!--    中间的内容-->
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_top_bar"
+        android:layout_above="@id/div_tab_bar"
+        android:background="@color/bg_white">
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Daily Cashbook</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+
+
+    <string name="tab_menu_home">主页</string>
+    <string name="tab_menu_dashboard">图表</string>
+    <string name="tab_menu_cash">记账</string>
+    <string name="tab_menu_mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

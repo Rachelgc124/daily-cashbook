@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:id="@+id/home_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!--        两个功能-->
+        <!--        select date-->
+        <LinearLayout
+            android:id="@+id/home_switch_ds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:padding="8dp"
+            android:background="@color/lightGreen"
+            android:saveEnabled="false">
+
+            <TextView
+                android:id="@+id/home_switch_ds_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DATE"
+                android:textColor="@color/bg_white"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <!--        range date-->
+        <LinearLayout
+            android:id="@+id/home_switch_dr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:padding="8dp"
+            android:background="@color/lightGreen"
+            android:saveEnabled="false">
+
+            <TextView
+                android:id="@+id/home_switch_dr_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TIME PERIOD"
+                android:textColor="@color/bg_white"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+</LinearLayout>
